@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,5 +32,28 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base{
+  h1{
+    @apply font-heading;
+    color: white;
+  text-shadow:
+   -1px -1px 0 #60A5FA,
+    1px -1px 0 #60A5FA,
+    -1px 1px 0 #60A5FA,
+     1px 1px 0 #60A5FA;
+  }
+  h2{
+    @apply font-link;
+    font-weight:bolder;
+  }
+  a{
+    @apply font-link;
+    font-weight:bolder;
+  }
+  p{
+    @apply font-link;
   }
 }
