@@ -9,7 +9,7 @@ export default function Contact() {
     message: '',
   });
 
-  const onChange = (e) => {
+  const onChange = (e: any) => {
     const fieldName = e.target.id;
     const fieldValue = e.target.value;
 
@@ -21,7 +21,7 @@ export default function Contact() {
     console.log("updated form", formData)
   }
 
-  const sendFormDataToApi = async (event) => {
+  const sendFormDataToApi = async (event: any) => {
     event.preventDefault();
 
     const formURL = event.target.action
