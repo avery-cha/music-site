@@ -5,7 +5,7 @@ const MainLayout = ({children}) => {
   return(
     <div>
       <NavigationBar></NavigationBar>
-      <div className="bg-cover bg-center w-screen h-screen bg-[url('https://snipboard.io/NoLOjH.jpg')] ">
+      <div className="bg-cover bg-right laptop:bg-center w-screen h-screen bg-[url('https://snipboard.io/NoLOjH.jpg')] ">
       <main>{children}</main>
       </div>
     </div>
