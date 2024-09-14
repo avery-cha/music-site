@@ -18,8 +18,6 @@ export default function Contact() {
       ...prevState,
       [fieldName]: fieldValue,
     }));
-
-    console.log("updated form", formData);
   };
 
   const sendFormDataToApi = async (event: any) => {
@@ -35,8 +33,15 @@ export default function Contact() {
       body: JSON.stringify(formData),
     });
     const data = await response.json();
-    console.log("response from API", data);
     setIsSubmitted(true);
+
+    const emailSend = await fetch("http://localhost:3000/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
   };
 
   return (

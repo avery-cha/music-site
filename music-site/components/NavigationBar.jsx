@@ -15,9 +15,11 @@ const NavigationBar = () => {
       <li className="bg-white-100">
         <a href="/music" className="block py-2  text-blue-400 hover:text-white">MUSIC</a>
       </li>
+      {/* <div>
       <li className="bg-white-100">
         <a href="/contact" className="block py-2   text-blue-400 hover:text-white">CONTACT</a>
       </li>
+      </div> */}
     </ul>
   </div>
 </nav>
